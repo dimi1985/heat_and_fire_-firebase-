@@ -54,5 +54,32 @@
       });
     });
   </script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAXx1HBRsFKoL4SyxUZLEj5eZe4FAVd5NY",
+    authDomain: "heat-and-fire-b675a.firebaseapp.com",
+    projectId: "heat-and-fire-b675a",
+    storageBucket: "heat-and-fire-b675a.appspot.com",
+    messagingSenderId: "579860641795",
+    appId: "1:579860641795:web:63f683a0ae0784e1b83636",
+    measurementId: "G-4HJFDEXB4L"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body>
 </html>
